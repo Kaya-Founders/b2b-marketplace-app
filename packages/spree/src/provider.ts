@@ -20,7 +20,7 @@ const spreeProvider = {
   cartCookie: requireConfigValue('cartCookieName') as string,
   fetcher,
   cart: { useCart, useAddItem, useUpdateItem, useRemoveItem },
-  customer: { useCustomer },
+  customer: { useCustomer, card: { useAddItem }, address: { useAddItem } },
   products: { useSearch },
   auth: { useLogin, useLogout, useSignup },
   checkout: { useCheckout },
